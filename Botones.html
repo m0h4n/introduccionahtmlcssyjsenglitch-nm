@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Botones</title>
+    <meta name="description" content="A cool thing made with Glitch" />
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://cdn.glitch.global/645ed8e7-30b6-46c3-a2b8-09f197e51ed2/857px-David_Bowie_logo_(Diamond_Dogs).svg.png?v=1695040819369"
+      type="image/x-icon"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" href="/style.css" />
+        <script src="script.js" defer></script>
+
+
+    <style>
+            .button {
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+      /*         display: none; no se mostraría el botón; en JS se modifica de Display none a block para Pop Ups */
+              /*         position: absolute; /*todos los botones punto 0 de origen con respecto a quién los contiene*/ */
+              /*         display: block; */
+              font-size: 16px;
+              margin: 4px 2px;
+              transition-duration: 0.4s;
+              cursor: pointer;
+              border-radius: 30px;
+            }
+
+            .button1 {
+              background-color: #4caf50;
+              color: black;
+              border: 2px solid #4caf50;
+            } /* Green */
+
+            .button1:hover {
+              background-color: black;
+              color: white;
+            }
+
+            .button2 {
+              background-color: #008cba;
+              color: black;
+              border: 2px solid #008cba;
+            } /* Blue */
+
+            .button2:hover {
+              background-color: black;
+              color: white;
+            }
+
+            .button3 {
+              background-color: #4caf50;
+              color: black;
+              border: 2px solid #4caf50;
+            } /* Green */
+
+            .button3:hover {
+              background-color: white;
+              color: black;
+            }
+
+            .button4 {
+              background-color: #008cba;
+              color: black;
+              border: 2px solid #008cba;
+            } /* Blue */
+
+            .button4:hover {
+              background-color: white;
+              color: black;
+            }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <ul>
+        <li><a href="/index.html">↖ volver</a></li>
+        
+<!--         <button onclick="window.location.href = 'index.html';">
+          <img
+            src="https://cdn.glitch.global/645ed8e7-30b6-46c3-a2b8-09f197e51ed2/857px-David_Bowie_logo_(Diamond_Dogs).svg.png?v=1695040819369"
+            class="icon"
+            width="50"
+          />
+        </button> -->
+        
+      </ul>
+    </header>
+
+    <div class = "infogeneral">
+      <h1>Botones &lt;button&gt;&lt;/button&gt;</h1>
+
+      <!--       <button type="button">Click Me!</button> -->
+
+      <!--       Para abrir hipervínculo interno -->
+      <!--       onclick="window.location.href='Video.html';" -->
+
+      <!--       Para abrir en ventana nueva -->
+      <!--         onclick="window.open('https://google.com', '_blank')" -->
+
+      <div id = "contenedor-botones2">
+        <button
+          class="button button1"
+          onclick="window.location.href='Audio.html';"
+        >
+          Audio
+        </button>
+
+        <button
+          onclick="window.open('Video.html', '_blank')"
+          class="button button2"
+        >
+          Video
+        </button>
+
+        <button
+          onclick="window.location.href= 'https://w3docs.com';"
+          class="button button3"
+        >
+          Botón 3
+        </button>
+
+        <button
+          onclick="window.location.href='https://w3docs.com';"
+          class="button button4"
+        >
+          Botón 4
+        </button>
+
+        <button onclick="window.location.href = 'Imagenes.html'" id= "botonytexto">
+          <img 
+            src="https://cdn.glitch.global/645ed8e7-30b6-46c3-a2b8-09f197e51ed2/857px-David_Bowie_logo_(Diamond_Dogs).svg.png?v=1695040819369"
+            class="icon"
+            width="50"
+          />
+          Bowie
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
